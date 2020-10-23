@@ -2,11 +2,32 @@
 
 自用黑苹果EFI，使用官方原版OpenCore，可以引导Windows，尽可能的减少修改，目前还在完善阶段。
 
+使用前请自行添加三码，可参考[corpnewt/GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
+
 ## **更新日志**
+
+2020-10-23：
+
+1. 去除了三码；
+2. 修复了耳机声音不正常，需要调节声道的问题；
+3. 更新了部分kexts，添加亮度调节快捷键的kexts。
 
 2020-10-18：
 
 1. 第一版，能够正常安装并启动，并保证鼠标键盘等基本功能可以使用（可能体验不佳）。
+
+---
+
+## 配置
+
+| 类型 | 参数 |
+| - | - |
+| CPU | Intel i5-6300HQ |
+| 内存 | 8GB 三星 DDR4 2133MHz |
+| 硬盘 | 三星 850 EVO 500GB SATA |
+| 显卡 | Intel HD530 |
+| 声卡 | Realtek ALC233 |
+| 网卡 | Broadcom BCM94352Z |
 
 ---
 
@@ -44,7 +65,7 @@
     AirportBrcmFixup.kext
     BrcmBluetoothInjector.kext
     BrcmFirmwareData.kext
-    BrcmPatchRAM2.kext
+    BrcmPatchRAM3.kext
 BCM网卡驱动
 
     AppleALC.kext
@@ -57,9 +78,10 @@ BCM网卡驱动
 USB
 
     VoodooPS2Controller.kext
-键盘等驱动
+    BrightnessKeys.kext
+键盘驱动，亮度调节驱动
 
 ---
 
 ## 最后
-第一次写Readme，感谢什么的都暂时没写。
+* 第一次写Readme，感谢什么的都暂时没写。
