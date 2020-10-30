@@ -13,6 +13,7 @@ EFI/Boot/BOOTX64.efi.*
 
 ### Windows ###
 System Volume Information
+$RECYCLE.BIN
 
 ### macOS ###
 # General
