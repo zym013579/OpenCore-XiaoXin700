@@ -1,6 +1,8 @@
 # OpenCore-XiaoXin700
 
-自用黑苹果EFI，使用官方原版OpenCore，可以引导Windows，尽可能的减少修改，目前还在完善阶段。
+自用黑苹果EFI，使用官方原版OpenCore，可以引导Windows，尽可能的减少修改，目前还未完善。
+
+由于更换电脑，项目终止。
 
 使用前请自行添加三码，可参考[corpnewt/GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
 
@@ -111,9 +113,3 @@ BCM网卡及蓝牙驱动
 
     WhateverGreen.kext
 显卡驱动，必须
-
----
-
-## 最后
-
-* 第一次写Readme，感谢什么的都暂时没写。
